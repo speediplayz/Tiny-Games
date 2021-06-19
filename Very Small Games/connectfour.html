@@ -1,0 +1,6 @@
+<canvas id="z"width=780 height=670></canvas><script>
+t=document,r=1,w=109,x=y=0,m=Array(9).fill(0),d=t.getElementById("z").getContext("2d")
+for(;x<7;x++)d.fillRect(0,x*w,773,10);for(;y<8;y++)d.fillRect(y*w,0,10,664)
+t.onclick=e=>{c=Math.floor(e.x/w)
+if(c>=0){if(m[c]<6){d.fillStyle=r?"red":"tan";r=!r
+d.fillRect(c*w+10,555-(++m[c]-1)*w,99,99)}}}</script>
